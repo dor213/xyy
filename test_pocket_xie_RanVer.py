@@ -32,6 +32,7 @@ def train_with_pocket(train_data,train_label,w0,pocket_w):
     for p in range(len(train_data)):
         DotSeq.append(p)
     RanDot = DotSeq.copy()
+    random.seed()
     
     for i in range(20):
         #RanDot = DotSeq.copy()
@@ -52,7 +53,7 @@ def train_with_pocket(train_data,train_label,w0,pocket_w):
                     w_error += 1
             if sign(np.dot(pocket_w,train_data[k])) != train_label[k]:
                     pocket_error += 1
-        if w_error <= pocket_error:
+        if w_error < pocket_error:
                 pocket_w = w
         print("i:",i,"w_Renew",w,"w_error:",w_error,"pocket_error:",pocket_error,"pocket_w:",pocket_w)
         w_error = 0
