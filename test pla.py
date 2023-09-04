@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 
 train_data = np.array([[1,3,3],[1,4,3],[1,1,1]])
