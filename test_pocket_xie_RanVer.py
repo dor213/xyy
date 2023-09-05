@@ -1,6 +1,7 @@
 import numpy as np
 import random
 #hahaha
+#1111111
 train_data = np.array([[1,0.2,0.7]
                        ,[1,0.3,0.3]
                        ,[1,0.4,0.5]
