@@ -1,6 +1,6 @@
 import numpy as np
 import random
-
+#hahaha
 train_data = np.array([[1,0.2,0.7]
                        ,[1,0.3,0.3]
                        ,[1,0.4,0.5]
